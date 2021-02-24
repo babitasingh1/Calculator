@@ -9,6 +9,10 @@ let outputVal = document.getElementById('output');
 let initialVal = 0;
 
 function AddNo() {
+  if (inputval.value == ''){
+    alert('please input some value')
+    return;
+  }
   let newValue = parseInt(initialVal) + parseInt(inputval.value);
 
   calculatedval.textContent =
@@ -19,6 +23,10 @@ function AddNo() {
 }
 
 function SubNo() {
+  if (inputval.value == ''){
+    alert('please input some value')
+    return;
+  }
   //let initialVal = calculatedval.value;
   let newValue = parseInt(initialVal) - parseInt(inputval.value);
 
@@ -30,6 +38,10 @@ function SubNo() {
 }
 
 function MulNo() {
+  if (inputval.value == ''){
+    alert('please input some value')
+    return;
+  }
   //let initialVal = calculatedval.value;
   let newValue = parseInt(initialVal) * parseInt(inputval.value);
 
@@ -41,6 +53,10 @@ function MulNo() {
 }
 
 function DivNo() {
+  if (inputval.value == ''){
+    alert('please input some value')
+    return;
+  }
   //let initialVal = calculatedval.value;
   if (parseInt(initialVal) == 0) {
     alert('0 cannot be devided');
